@@ -12,14 +12,25 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - name: Use Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '18'
-        cache: 'npm'
+        # 如果使用 pnpm 的快取，則修改為下方配置
+        cache: 'pnpm'
+
+    - name: Install pnpm
+      run: npm install -g pnpm
+
     - name: Install dependencies
       run: |
-        if [ -f package-lock.json ]; then
-          npm ci
+        if [ -f pnpm-lock.yaml ]; then
+          pnpm install
         else
-          npm install
+          echo "No pnpm-lock.yaml found, exiting..."
+          exit 1
+
+    # 如果有其他構建或測試步驟，請在這裡添加
+    - name: Build
+      run: pnpm run build

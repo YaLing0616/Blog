@@ -22,19 +22,32 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: npm
+          cache: pnpm  # 使用 pnpm 的快取
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
       - name: Install dependencies
-        run: npm ci
+        run: |
+          if [ -f pnpm-lock.yaml ]; then
+            pnpm install
+          else
+            echo "No pnpm-lock.yaml found, exiting..."
+            exit 1
+
       - name: Build with VitePress
         run: |
-          npm run docs:build
+          pnpm run docs:build
           touch docs/.vitepress/dist/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

@@ -1,0 +1,37 @@
+/**
+網址導航頁面樣式
+**/
+.site-layout {
+  .VPDoc {
+    .container {
+      max-width: 100% !important;
+      justify-content: flex-start !important;
+      .aside {
+        order: 1;
+        width: 156px;
+        .aside-container,
+        .aside-curtain {
+          width: 124px;
+        }
+      }
+      .content {
+        order: 2;
+        max-width: 100% !important;
+        .content-container {
+          max-width: 100% !important;
+        }
+      }
+      .main {
+        height: auto;
+        overflow: hidden;
+        .vp-doc h2 {
+          margin: 0;
+        }
+      }
+    }
+  }
+  /* 隱藏底部在 github 上編輯此頁模塊*/
+  .VPDocFooter {
+    display: none;
+  }
+}

@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a2 as o}from"./chunks/framework.BSDA2Al6.js";const v=JSON.parse('{"title":"vscode markdown preview hotkey","description":"","frontmatter":{},"headers":[],"relativePath":"test.md","filePath":"test.md"}'),s={name:"test.md"},n=o("",6),r=[n];function i(c,d,p,l,_,h){return a(),t("div",null,r)}const k=e(s,[["render",i]]);export{v as __pageData,k as default};

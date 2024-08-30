@@ -1,0 +1,47 @@
+name: GitHub Actions Build and Deploy
+
+on:
+  # 手動運行工作流程（workflow_dispatch 事件觸發器配置後可以在actions下手動運行工作流）
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # 指定伺服器的運行環境：最新版本ubuntu
+    steps:
+      # 使用actions/checkout@v4 庫拉取代碼到 ubuntu 上
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # 根據網上資料查詢此處可以設置為 false。https://github.com/actions/checkout
+          persist-credentials: false
+
+      # 安裝 pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      # 設置 node 的版本
+      - name: Use Node.js
+        # 使用 actions/setup-node@v3 庫安裝 nodejs，with 提供了一個參數 node-version 表示要安裝的 nodejs 版本
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          cache: 'pnpm'
+
+      # 打包成靜態文件
+      - name: Build
+        run: pnpm install && pnpm build docs:build
+
+      # 部署到 GitHub Pages - 也就是將打包內容發布到 GitHub Pages
+      - name: Deploy
+        # 使用別人寫好的 actions去部署（將打包文件部署到指定分支上）
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        # 自定義環境變量
+        with:
+          # 指定倉庫：你要發布的倉庫路徑名
+          repository-name: msyuan/vitePress-project
+          # 部署到 deploy-pages 分支，也就是部署後提交到那個分支
+          branch: deploy-pages
+          # 填寫打包好的目錄名稱路徑，本項目配置在根目錄
+          folder: dist

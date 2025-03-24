@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "My Blog",
   description: "A VitePress Site",
-  base:'/Blog/',
+  base: '/Blog/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/logo.png",
@@ -19,11 +19,17 @@ export default defineConfig({
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' },
-          { 
-            text: 'Test', 
+          {
+            text: 'Test',
             items: [
               { text: "我是該分類下第一篇文章", link: "/test" },
               { text: "我是該分類下第二篇文章", link: "/test1" }
+            ]
+          },
+          {
+            text: '問題集',
+            items: [
+              { text: "為什麼 git push 發生錯誤？", link: "/github-problems" },
             ]
           }
         ]

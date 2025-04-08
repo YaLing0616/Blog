@@ -22,7 +22,7 @@ export default defineConfig({
         items: [
           { text: 'Markdown Examples', link: '/examples/markdown-examples' },
           { text: 'Runtime API Examples', link: '/examples/api-examples' },
-          { text: "markdown語法", link: "/markdown" },
+          { text: "💡 Markdown語法", link: "/markdown" },
           {
             text: 'Test',
             items: [
@@ -34,6 +34,7 @@ export default defineConfig({
             text: '🤩 一起玩 NAS!',
             items: [
               { text: "DIY 閒置電腦做 NAS", link: "/nas/diy-nas" },
+              { text: "Gandi 網域申請與委託 Cloudflare 管理", link: "/nas/gandi-cloudflare-apply" },
             ]
           },
           {

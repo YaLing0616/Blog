@@ -12,12 +12,29 @@
 
 目前 Gandi 在巴黎、盧森堡、臺北、三藩市皆設有辦事處，因此可使用中文介面，可說是相當方便。
 
+接下來就正式進入到 Gandi 網域申請的流程！
+
 ## 註冊 Gandi
 
-![這是圖片](/assets/img/dns-cloudflare-apply/gandi-email-validate.png)
+先到 Gandi 官網上註冊一個帳號（依序填寫即可）
 
+<img src="/assets/img/dns-cloudflare-apply/gandi-register.png" alt="" style="width: 60%; height: auto;" />
+<!-- ![這是圖片](/assets/img/dns-cloudflare-apply/gandi-register.png) -->
+
+註冊完後，記得要到 Email 完成驗證，不然一天後帳號將被停用！
+
+<img src="/assets/img/dns-cloudflare-apply/gandi-email-validate.png" alt="" style="width: 80%; height: auto;" />
+<!-- ![這是圖片](/assets/img/dns-cloudflare-apply/gandi-email-validate.png) -->
+
+註冊完後即可登入購買網域。
 
 ## 正式購買網域
+
+正式購買網域之前，我們先到網站上查詢欲申請的域名是否已存在以及價格
+
+![這是圖片](/assets/img/dns-cloudflare-apply/gandi-dns-search.png)
+
+搜尋結果中，Gandi 會列出可以租用的網域名稱 <br> 從其中挑選一個自己喜歡的，點擊圖示加入購物車
 
 ![這是圖片](/assets/img/dns-cloudflare-apply/gandi-search-domain-exist.png)
 

@@ -6,12 +6,21 @@
 
 ### 主要規格
 
-> CPU : Intel i7-7700+主機板 <br>
-> RAM : DDR4 24G <br>
+> CPU : Intel i5-7400+主機板 <br>
+> RAM : DDR4 8G <br>
 > 電源供應器 : 500w 一般的 <br>
-> 散熱器 : 一般的cpu散熱器+機箱風扇*3 <br>
-> 硬碟 : WD HC550 SATA 16T*2 二手伺服器硬碟 <br>
+> 散熱器 : 一般的cpu散熱器+機箱風扇\*3 <br>
+> 硬碟 : WD HC550 SATA 16T\*2 二手伺服器硬碟 <br>
 > 機殼 : 一般桌上型電腦主機機殼 <br>
+
+![這是圖片](/assets/img/diy-nas/HDD-1.png)
+
+<!-- | ![這是圖片](/assets/img/diy-nas/HDD-1.png) | ![這是圖片](/assets/img/diy-nas/HDD-2.png) |
+|:--:|:--:| -->
+
+## NAS系統 - Unraid 
+
+### Unraid 安裝
 
 
 參考來源：

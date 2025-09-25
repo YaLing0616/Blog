@@ -42,7 +42,7 @@ API 告訴我們「可以呼叫哪些功能、需要什麼參數、會回傳什�
 Response format 是指伺服器端回應時採用的資料格式，可能會是：XML、JSON、Protocol Buffers、Thrift、YAML 等等  
 JSON 是最常用的回應格式之一，各種程式語言都可以產生或解析 JSON 字串
 
-## 什麼是 RESR/RESTful API ?
+## 什麼是 REST/RESTful API ?
 RESTful API 是一種 Web API 的開發風格，透過 REST 風格的引進，可以生產並且持續規劃健壯的API
 
 ## 好用的 API 工具

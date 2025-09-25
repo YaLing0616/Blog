@@ -38,9 +38,16 @@ export default defineConfig({
             ]
           },
           {
+            text: 'RESTful API',
+            items: [
+              { text: "什麼是API?", link: "/RESTfulAPI/api" },
+            ]
+          },
+          {
             text: '問題集',
             items: [
-              { text: "為什麼 git push 發生錯誤？", link: "/problems/github-problems" },
+              { text: "git branch 取消遠端追蹤", link: "/problems/git-branch-unfollow" },
+              { text: "為什麼 git push 至 GitHub 發生錯誤？", link: "/problems/git-push-problem" },
             ]
           }
         ]

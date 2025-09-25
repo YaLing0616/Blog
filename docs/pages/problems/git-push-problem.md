@@ -1,4 +1,4 @@
-# 為什麼 git push 發生錯誤？
+# 為什麼 git push 至 GitHub 發生錯誤？
 
 錯誤訊息如下：
 

@@ -24,13 +24,11 @@ export default defineConfig({
           { text: 'Runtime API Examples', link: '/examples/api-examples' },
           { text: "💡 Markdown語法", link: "/markdown" },
           {
-            text: 'Test',
+            text: 'Documents',
             items: [
-              { text: "我是該分類下第一篇文章", link: "/test/test" },
-              { text: "我是該分類下第二篇文章", link: "/test/test1" }
+              { text: "Design Language", link: "/documents/design-language" },
             ]
-          },
-          {
+          },{
             text: '🤩 一起玩 NAS!',
             items: [
               { text: "DIY 閒置電腦做 NAS", link: "/nas/diy-nas" },
@@ -38,7 +36,7 @@ export default defineConfig({
             ]
           },
           {
-            text: 'RESTful API',
+            text: 'API',
             items: [
               { text: "什麼是API?", link: "/RESTfulAPI/api" },
             ]
@@ -48,6 +46,12 @@ export default defineConfig({
             items: [
               { text: "git branch 取消遠端追蹤", link: "/problems/git-branch-unfollow" },
               { text: "為什麼 git push 至 GitHub 發生錯誤？", link: "/problems/git-push-problem" },
+            ]
+          },{
+            text: 'Test',
+            items: [
+              { text: "我是該分類下第一篇文章", link: "/test/test" },
+              { text: "我是該分類下第二篇文章", link: "/test/test1" }
             ]
           }
         ]

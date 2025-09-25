@@ -46,7 +46,7 @@
 
 ![這是圖片](/assets/img/dns-cloudflare-apply/gandi-domain-purchase-step3.png)
 
-
+---
 參考來源：
 
 - 網站帶路姬-[網域購買指南：網域和網址完整差異比較](https://wpointer.com/wordpress-tutorials/what-is-domain/)

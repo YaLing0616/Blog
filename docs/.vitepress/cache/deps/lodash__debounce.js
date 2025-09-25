@@ -2,9 +2,9 @@ import {
   __commonJS
 } from "./chunk-BUSYA2B4.js";
 
-// node_modules/.pnpm/lodash.debounce@4.0.8/node_modules/lodash.debounce/index.js
+// node_modules/lodash.debounce/index.js
 var require_lodash = __commonJS({
-  "node_modules/.pnpm/lodash.debounce@4.0.8/node_modules/lodash.debounce/index.js"(exports, module) {
+  "node_modules/lodash.debounce/index.js"(exports, module) {
     var FUNC_ERROR_TEXT = "Expected a function";
     var NAN = 0 / 0;
     var symbolTag = "[object Symbol]";

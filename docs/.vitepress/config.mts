@@ -36,9 +36,9 @@ export default defineConfig({
             ]
           },
           {
-            text: 'API',
+            text: 'Web',
             items: [
-              { text: "什麼是API?", link: "/RESTfulAPI/api" },
+              { text: "什麼是API?", link: "/Web/api" },
             ]
           },
           {

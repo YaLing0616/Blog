@@ -38,7 +38,14 @@ export default defineConfig({
           {
             text: 'Web',
             items: [
-              { text: "什麼是API?", link: "/Web/api" },
+              { text: "什麼是 API?", link: "/web/api" },
+              { text: "HTTP 傳輸格式", link: "/web/http" },
+            ]
+          },
+          {
+            text: '環境設定',
+            items: [
+              { text: "開放資料庫連線功能", link: "/environment/phpMyAdmin-allow-remote-access" },
             ]
           },
           {

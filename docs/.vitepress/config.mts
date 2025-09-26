@@ -43,7 +43,7 @@ export default defineConfig({
             ]
           },
           {
-            text: '環境設定',
+            text: 'Xampp 環境設定',
             items: [
               { text: "Apache 開放資料庫連線功能", link: "/environment/phpMyAdmin-allow-remote-access" },
             ]

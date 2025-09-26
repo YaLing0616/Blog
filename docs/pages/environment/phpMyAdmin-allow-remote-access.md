@@ -1,4 +1,4 @@
-# 開放資料庫連線功能 (Apache 2.2寫法)
+# Apache 開放資料庫連線功能 (Apache 2.2寫法)
 打開：C:\xampp\apache\conf\extra\httpd-xampp.conf
 
 ### 修改 phpMyAdmin 的 Directory、LocationMatch

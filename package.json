@@ -1,9 +1,9 @@
 {
   "scripts": {
-  "docs:dev": "vitepress dev docs",
-  "docs:build": "vitepress build docs",
-  "docs:preview": "vitepress preview docs"
-},
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
   "devDependencies": {
     "@mdit-vue/shared": "^1.0.0",
     "prettier": "^3.0.3",
@@ -12,7 +12,7 @@
     "vue": "^3.3.4"
   },
   "dependencies": {
-    "element-plus": "^2.3.14",
+    "element-plus": "^2.9.7",
     "lodash.debounce": "^4.0.8"
   }
 }

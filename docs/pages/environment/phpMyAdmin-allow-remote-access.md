@@ -80,10 +80,8 @@ SHOW GRANTS FOR 'ryan'@'192.168.0.65';
 同事在沒打帳號密碼的情況下會直接以 root 帳號登入，所以中途先來解決這個問題
 
 這個錯誤是來自於 config 的設定問題  
-> XAMPP 的 phpMyAdmin 很常預設  
-> auth_type = 'config'   
-> root/空密碼  
-> `任何能開 phpMyAdmin 的人都等於 root`
+> XAMPP 的 phpMyAdmin 很常預設 **auth_type = 'config'、root/空密碼**  
+> `所以任何能開啟 phpMyAdmin 的人都等於 root`
 
 💡由於 root 預設是空密碼，所以記得先設定 root 密碼，否則修改完 config 後會進不去唷！
 
@@ -108,4 +106,3 @@ SHOW GRANTS FOR 'ryan'@'192.168.0.65';
 > $cfg['Servers'][$i]['AllowNoPassword'] = false; 
 > ```
 再測試一次 http://<我的 XAMPP 機器 IP>/phpmyadmin 連線時，已順利跳出登入畫面
-

@@ -2,7 +2,7 @@
 
 錯誤訊息如下：
 
-![這是圖片](/assets/img/github-problems/git-push-error.png)
+![這是圖片](/assets/img/problems/git-push-error.png)
 
 這個錯誤訊息表示你正在使用 HTTPS 方式連接 GitHub，  
 但 GitHub 在 2021 年 8 月 13 日起 **不再支援使用帳號密碼進行認證**。

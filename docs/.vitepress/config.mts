@@ -29,6 +29,11 @@ export default defineConfig({
               { text: "Design Language", link: "/documents/design-language" },
             ]
           },{
+            text: 'Vitepress',
+            items: [
+              { text: "Vitepress", link: "/vitepress/vitepress" },
+            ]
+          },{
             text: '🤩 一起玩 NAS!',
             items: [
               { text: "DIY 閒置電腦做 NAS", link: "/nas/diy-nas" },

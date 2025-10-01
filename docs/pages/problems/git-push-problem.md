@@ -9,7 +9,7 @@
 
 ### 快速檢查目前遠端網址是 HTTPS 還是 SSH
 
-```
+```bash
 git remote -v
 ```
 
@@ -38,13 +38,13 @@ git remote -v
 (尚未使用過) 
 
 #### 步驟一 : 產生 SSH 金鑰（如果你還沒有）
-```
+```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 一直按 Enter，完成後會產生公私鑰。
 
 #### 步驟二 : 加入 SSH Agent
-```
+```bash
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 ```

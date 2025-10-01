@@ -5,7 +5,7 @@
 以同事 IP 192.168.0.65、帳號 ryan、要開放的 DB 叫 wiretech 為例：
 
 原始設定:
-```
+```apache
 --1
 Alias /phpmyadmin "C:/xampp/phpMyAdmin/"
 <Directory "C:/xampp/phpMyAdmin">
@@ -21,7 +21,7 @@ Alias /phpmyadmin "C:/xampp/phpMyAdmin/"
 </LocationMatch>
 ```
 改為:
-```
+```apache{7,16}
 --1
 Alias /phpmyadmin "C:/xampp/phpMyAdmin/"
 <Directory "C:/xampp/phpMyAdmin">
@@ -54,7 +54,7 @@ Alias /phpmyadmin "C:/xampp/phpMyAdmin/"
 ### 建立使用者以及設定資料庫讀取權限
 
 依照下列指令操作
-```
+```sql
 -- 1) 建立使用者（不給任何全域權限）  
 CREATE USER 'ryan'@'192.168.0.65' IDENTIFIED BY 'g1234'; --程式用
 CREATE USER 'ryan'@'127.0.0.1' IDENTIFIED BY 'g1234'; --開發用，如果使用者欲使用 phpMyAdmin 登入需要設定此帳號
@@ -68,9 +68,9 @@ SHOW GRANTS FOR 'ryan'@'192.168.0.65';
 
 -- 其他相關指令
 -- 刪除使用者  
---DROP USER 'ryan'@'127.0.0.1';
+DROP USER 'ryan'@'127.0.0.1';
 -- 清掉 ryan 的權限  
--- REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'ryan'@'127.0.0.1'
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'ryan'@'127.0.0.1'
 ```
 
 ---
@@ -89,17 +89,17 @@ SHOW GRANTS FOR 'ryan'@'192.168.0.65';
 打開：C:\xampp\phpMyAdmin\config.inc.php
 
 > **改為 cookie 登入**
-> ```
+> ```ini
 > // $cfg['Servers'][$i]['auth_type'] = 'config';
 > $cfg['Servers'][$i]['auth_type'] = 'cookie';  
 > ```
 > **當登入方式設定為 cookie 時，phpMyAdmin 會用這把金鑰來加密/簽名瀏覽器裡的登入 Cookie**
-> ```
+> ```ini
 > // $cfg['blowfish_secret'] = 'xampp'; /* YOU SHOULD CHANGE THIS FOR A MORE SECURE COOKIE AUTH! */
 > $cfg['blowfish_secret'] = 'asdjf9230uasd!@#9u23kasdf9823jlasdf'; // phpMyAdmin 的 Cookie 加密用金鑰
 > ```
 > **禁止空密碼**
-> ```
+> ```ini
 > // $cfg['Servers'][$i]['user'] = 'root';
 > // $cfg['Servers'][$i]['password'] = 'YOUR_PASSWORD';
 > // $cfg['Servers'][$i]['AllowNoPassword'] = true;

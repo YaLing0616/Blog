@@ -6,14 +6,14 @@
 
 #### 找出要修正的那個 commit
 記下要修正的 ```<commit-hash>```（7 碼短雜湊即可）
-```
+```bash
 git log --oneline
 ```
 ![fixup使用場景](/assets/img/problems/git-log.png)
 
 ### ```git fixup```
 對之前寫錯的檔案內容進行修正
-```
+```bash
 git commit --fixup "<commit-hash>"
 
 git commit --fixup 71804bb 
@@ -35,7 +35,7 @@ fixup 會產生一顆訊息像 fixup! 原訊息... 的臨時 commit，再使用 
 
 <img src="/assets/img/problems/rebase-1.png" alt="" style="width: auto; height: 350px;" />
 
-```
+```bash
 會自動把 fixup! / squash! commits 合併到對應的目標 commit
 git rebase -i --autosquash <upstream>
 
@@ -48,7 +48,7 @@ git rebase -i 9b1022e8a44ff8ea2cfec01f9e1b411b643f3fe1^
 按下START REBASE 按鈕後，即可完成合併
 
 ### ```rebase 後的 push```
-```
+```bash
 git push --force-with-lease
 ```
 - --force：不管遠端現在有什麼內容，直接覆蓋  
@@ -59,7 +59,7 @@ git push --force-with-lease
 
 ---
 💡小工具：把 Git 的預設編輯器設成 VS Code，當使用 rebase 的時候，會自動開啟 GUI 工具
-```
+```bash
 git config --global core.editor "code --wait"
 ```
 core.editor：指定 Git 要用哪個編輯器來寫 commit message、rebase -i、merge message、tag 訊息

@@ -8,7 +8,7 @@
 同事在未更新remote path的情況下，還是push到這個專案上  
 
 在當前以及遠端都沒有feature/ryan的分支下，可以使用以下指令來取消追蹤
-```
+```bash
 git fetch -p     # prune，把遠端已刪的分支追蹤清掉
 ```
 

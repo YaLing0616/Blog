@@ -28,4 +28,9 @@
 - 同事自組[規格](https://hackmd.io/@JunYou/B1AnRO53Jl)參考
 - Slark-[一起玩 NAS!](https://wiki.slarker.me/)
 - Noah's Blog-[架設自己的 NAS 伺服器，自組 TrueNAS Core 紀錄](https://noahchen.me/posts/diy-truenas-core/)
+- [用自組 NAS 亂玩 unRaid 系列](https://ithelp.ithome.com.tw/m/articles/10260755)
+- [用 UNRAID 打造 AIO 全生態](https://ithelp.ithome.com.tw/m/articles/10292137)
+
+
+
 

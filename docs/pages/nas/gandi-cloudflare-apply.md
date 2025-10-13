@@ -30,15 +30,15 @@
 
 ## 正式購買網域
 
-正式購買網域之前，我們先到網站上查詢欲申請的域名是否已存在以及價格
-
 ![這是圖片](/assets/img/dns-cloudflare-apply/gandi-dns-search.png)
 
-搜尋結果中，Gandi 會列出可以租用的網域名稱 <br> 從其中挑選一個自己喜歡的，點擊圖示加入購物車
+正式購買網域之前，我們先到網站上查詢欲申請的域名是否已存在以及價格
 
 ![這是圖片](/assets/img/dns-cloudflare-apply/gandi-search-domain-exist.png)
 
-![這是圖片](/assets/img/dns-cloudflare-apply/gandi-search-domain-prices.png)
+搜尋結果中，Gandi 會列出可以租用的網域名稱 <br> 從其中挑選一個自己喜歡的，點擊圖示加入購物車
+
+<!-- ![這是圖片](/assets/img/dns-cloudflare-apply/gandi-search-domain-prices.png) -->
 
 ![這是圖片](/assets/img/dns-cloudflare-apply/gandi-domain-purchase-step1.png)
 
@@ -46,7 +46,10 @@
 
 ![這是圖片](/assets/img/dns-cloudflare-apply/gandi-domain-purchase-step3.png)
 
-## Cloudflare 託管
+付款完成後，即購買成功！  
+好感動😭😭，我終於也有自己的網域了 
+
+## Cloudflare 服務
 
 為什麼要將網域託管到 Cloudflare ?  
 他提供了哪些服務：
@@ -64,6 +67,55 @@ Cloudflare 能自動將圖片轉換成 WebP 或 AVIF 等更高效的格式，並
 -  **即時流量與安全分析**   
 Cloudflare 提供詳細的分析工具，可以看到訪客來源、流量趨勢，以及有哪些攻擊或惡意請求被阻擋
 
+在了解 Cloudflare 的各項優點後，就可以開始將網域託管給 Cloudflare 了!!
+
+::: info 為什麼不用 Gandi 託管？
+或許你會想：「既然網域已經在 Gandi 註冊，為什麼不乾脆也讓它託管就好？」  
+其實理由很簡單——Gandi 的託管是要付費的  
+對於非商業用途或只是想自己玩玩架站的開發者來說  
+Cloudflare 免費又穩定，功能也相當完整，自然成為更划算的選擇  
+
+簡單來說，能省則省，但效果一樣好 😎
+:::
+
+## Cloudflare 託管步驟
+
+![這是圖片](/assets/img/dns-cloudflare-apply/cloudflare-1.png)
+
+註冊完後，Cloudflare 預設會進到帳戶首頁  
+➞ 輸入現有網域 (輸入要連結到 Cloudflare 的網站網址)  
+Cloudflare 會自動抓取網站的 DNS 記錄
+
+![這是圖片](/assets/img/dns-cloudflare-apply/cloudflare-2.png)
+
+➞ 選擇方案  
+免費套餐就足夠我們使用了
+
+![這是圖片](/assets/img/dns-cloudflare-apply/cloudflare-3.png)
+
+這裡可以看到剛剛 Cloudflare 自動幫我們抓取的 DNS 紀錄  
+如果有任何遺失的記錄，就需要自行手動加入
+
+![這是圖片](/assets/img/dns-cloudflare-apply/cloudflare-4.png)
+
+➞ 更新名稱伺服器  
+Cloudflare 會提供兩個新的名稱伺服器（Nameservers）
+
+<!-- ![這是圖片](/assets/img/dns-cloudflare-apply/cloudflare-5.png) -->
+
+![這是圖片](/assets/img/dns-cloudflare-apply/cloudflare-6.png)
+
+登入原域名註冊商 (Gandi)  
+➞ 將域名的 Nameserver 更新為 Cloudflare 提供的這兩個新的名稱伺服器
+
+![這是圖片](/assets/img/dns-cloudflare-apply/cloudflare-7.png)
+
+完成以上步驟後，就成功將網站轉移到 Cloudflare 了！
+
+![這是圖片](/assets/img/dns-cloudflare-apply/cloudflare-8.png)
+
+名稱伺服器的變更可能需要一些時間才會生效，Cloudflare 也提醒可能會需要等待最多 24 小時  
+但這次的託管幾乎是立即生效！
 
 ---
 ### Proxy 是什麼?

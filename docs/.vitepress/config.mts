@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "DODOOMA 除蟲實驗室",
-  description: "A VitePress Site🐛🐈",
+  title: "🐈 貓貓除蟲實驗室",
+  description: "A VitePress Site🐛",
   base: '/Blog/',
   rewrites: {
     'pages/(.*)': '(.*)'

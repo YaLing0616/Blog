@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Blog",
-  description: "A VitePress Site",
+  title: "DODOOMA 除蟲實驗室",
+  description: "A VitePress Site🐛🐈",
   base: '/Blog/',
   rewrites: {
     'pages/(.*)': '(.*)'
@@ -54,7 +54,7 @@ export default defineConfig({
             ]
           },
           {
-            text: '問題集',
+            text: '疑難雜症百寶袋',
             items: [
               { text: "git fixup、git rebase 使用場景", link: "/problems/git-fixup-git-rebase" },
               { text: "git branch 取消遠端追蹤", link: "/problems/git-branch-unfollow" },
@@ -72,7 +72,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/YaLing0616/Blog/tree/develop' }
     ]
   }
 })

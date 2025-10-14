@@ -20,7 +20,38 @@
 
 ## NAS系統 - Unraid 
 
-### Unraid 安裝
+## Unraid 開機碟選用 
+Unraid 的設計原理跟一般作業系統不同，它不是安裝在 SSD 或 HDD 上，而是採用<mark>隨身碟</mark>開機
+
+Unraid 對隨身碟的要求：
+- 必須有唯一 GUID（硬體序號）
+- 容量 4～32 GB 之間  
+太小裝不下更新、太大（64GB 以上）有時候 BIOS 開機不穩
+- 官方文件建議使用 USB 2.0 裝置 (但 2025 年市面上很難找到 USB 2.0)  
+USB 3.0 隨身碟是向下相容的，如果真的找不到適合的隨身碟，也可以使用替代方案 ⭢ **將 3.0 隨身碟插到 2.0 接口上**
+
+因為手邊剛好有個閒置隨身碟，所以來做個檢查確認是否適合作為 Unraid 開機碟
+
+```bash
+>powershell -Command "Get-CimInstance Win32_DiskDrive | Select-Object Index,Model,SerialNumber,InterfaceType"
+
+Index Model                                SerialNumber               InterfaceType
+----- -----                                ------------               -------------
+    0 JetFlash Transcend 16GB USB Device   xxxxxxxxxx                 USB
+```
+
+檢查結果：  
+✅ 有「唯一序號」(不是空白 / 不是全 0)  
+✅ 容量 16GB  
+✅ InterfaceType 正確認出為 USB 裝置
+
+接下來，將隨身碟格式化為 FAT32 格式 (格式化設定如下)
+
+![這是圖片](/assets/img/diy-nas/formatUSB.png)
+
+## Unraid 安裝
+
+https://ithelp.ithome.com.tw/m/articles/10263560
 
 ---
 參考來源：

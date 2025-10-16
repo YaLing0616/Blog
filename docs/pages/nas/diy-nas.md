@@ -49,7 +49,17 @@ Index Model                                SerialNumber               InterfaceT
 
 ![這是圖片](/assets/img/diy-nas/formatUSB.png)
 
+即使前面已經檢查過了，在「取 key 階段」仍無法讀到 USB，不確定是不是因為開心版會挑 USB 的問題，最後還是又購買了個新的 USB 來做為開機碟  
+
+✅ 實測成功！   
+有需求的人可以參考這款：  
+```SanDisk 晟碟Cruzer Blade CZ50 USB ```
+
 ## Unraid 安裝
+開始安裝 Unraid 之前，先別急著動手！網路環境也是很重要的一環，想了解可以點[這裡](https://ithelp.ithome.com.tw/articles/10262616)看看
+
+
+
 
 https://ithelp.ithome.com.tw/m/articles/10263560
 

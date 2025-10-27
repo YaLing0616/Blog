@@ -6,8 +6,8 @@ hero:
   image: 
     src: /logo.png
     alt: blog
-  name: "My Blog"
-  text: "A VitePress Site"
+  name: "NullCAT's Lab"
+  text: "從空值開始定義世界"
   tagline: My great project tagline
   actions:
     - theme: brand

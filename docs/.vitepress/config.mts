@@ -56,6 +56,7 @@ export default defineConfig({
           {
             text: '疑難雜症百寶袋',
             items: [
+              { text: "如何製作 Vscode Extensions", link: "/problems/vscode-extension" },
               { text: "git fixup、git rebase 使用場景", link: "/problems/git-fixup-git-rebase" },
               { text: "git branch 取消遠端追蹤", link: "/problems/git-branch-unfollow" },
               { text: "為什麼 git push 至 GitHub 發生錯誤？", link: "/problems/git-push-problem" },
